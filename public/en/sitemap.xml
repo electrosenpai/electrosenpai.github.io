@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://electrosenpai.github.io/architecture/</loc>
+    <lastmod>2022-12-29T11:26:16+01:00</lastmod>
+  </url><url>
+    <loc>https://electrosenpai.github.io/architecture/plan/</loc>
+    <lastmod>2022-12-29T11:26:16+01:00</lastmod>
+  </url><url>
+    <loc>https://electrosenpai.github.io/</loc>
+    <lastmod>2022-12-29T11:26:16+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-fr"
+                href="https://electrosenpai.github.io/pt-fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://electrosenpai.github.io/"
+                />
+  </url><url>
+    <loc>https://electrosenpai.github.io/architecture/lesson1/</loc>
+    <lastmod>2022-12-29T10:00:16+01:00</lastmod>
+  </url><url>
+    <loc>https://electrosenpai.github.io/courses/</loc>
+    <lastmod>2022-12-29T10:00:07+01:00</lastmod>
+  </url><url>
+    <loc>https://electrosenpai.github.io/architecture/http/</loc>
+  </url><url>
     <loc>https://electrosenpai.github.io/authors/</loc>
     <xhtml:link
                 rel="alternate"
@@ -48,18 +75,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://electrosenpai.github.io/tags/"
-                />
-  </url><url>
-    <loc>https://electrosenpai.github.io/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-fr"
-                href="https://electrosenpai.github.io/pt-fr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://electrosenpai.github.io/"
                 />
   </url>
 </urlset>

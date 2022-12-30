@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Teaching</title>
-    <link>https://electrosenpai.github.io/</link>
-    <description>Recent content on Teaching</description>
+    <title>Architectures on Teaching</title>
+    <link>https://electrosenpai.github.io/architecture/</link>
+    <description>Recent content in Architectures on Teaching</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Dec 2022 11:26:16 +0100</lastBuildDate><atom:link href="https://electrosenpai.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Dec 2022 11:26:16 +0100</lastBuildDate><atom:link href="https://electrosenpai.github.io/architecture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Plan</title>
       <link>https://electrosenpai.github.io/architecture/plan/</link>
@@ -24,16 +24,6 @@
       <guid>https://electrosenpai.github.io/architecture/lesson1/</guid>
       <description>Qu&amp;rsquo;est-ce que l&amp;rsquo;architecture web ? Link to heading L&amp;rsquo;architecture web désigne la manière dont les différents éléments d&amp;rsquo;une application web (services, bases de données, front-end, etc.) sont organisés et interagissent entre eux. Elle détermine la façon dont l&amp;rsquo;application web sera conçue, développée, déployée et maintenue.
 Differentes architectures : Link to heading Il existe plusieurs types d&amp;rsquo;architecture web, qui varient selon la manière dont les différents éléments de l&amp;rsquo;application sont séparés et communiquent entre eux.</description>
-    </item>
-    
-    <item>
-      <title>Courses</title>
-      <link>https://electrosenpai.github.io/courses/</link>
-      <pubDate>Thu, 29 Dec 2022 10:00:07 +0100</pubDate>
-      
-      <guid>https://electrosenpai.github.io/courses/</guid>
-      <description>Introduction Link to heading Je suis heureux de vous accueillir pour ces trois cours de formation de qualité, qui vous permettront de développer vos compétences en architecture web, en sécurité informatique et en programmation cloud.
-Cours d&amp;rsquo;architecture web Link to heading Le cours d&amp;rsquo;architecture web vous enseignera les principes de base de la conception et de la mise en place d&amp;rsquo;architectures logicielles pour des applications web. Vous découvrirez les différents types d&amp;rsquo;architectures et les technologies associées, ainsi que les bonnes pratiques de développement et de déploiement.</description>
     </item>
     
     <item>
