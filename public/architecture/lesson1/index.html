@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>
-  Session 1 : Introduction à l&#39;architecture web · Teaching
+  Session 2 : Conception d’une architecture web  · Teaching
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,18 +12,18 @@
 
 
 <meta name="author" content="Jean-Baptiste DONNETTE">
-<meta name="description" content="Qu&rsquo;est-ce que l&rsquo;architecture web ? Link to heading L&rsquo;architecture web désigne la manière dont les différents éléments d&rsquo;une application web (services, bases de données, front-end, etc.) sont organisés et interagissent entre eux. Elle détermine la façon dont l&rsquo;application web sera conçue, développée, déployée et maintenue.
-Differentes architectures : Link to heading Il existe plusieurs types d&rsquo;architecture web, qui varient selon la manière dont les différents éléments de l&rsquo;application sont séparés et communiquent entre eux.">
+<meta name="description" content="Les critères de choix d&rsquo;une architecture web Link to heading Lorsqu&rsquo;on doit décider quelle architecture adopter pour une application web, il est important de prendre en compte plusieurs critères qui vont influencer sa performance, sa scalabilité et sa flexibilité. Voici quelques exemples de critères à prendre en compte :
+Scalabilité : la capacité d&rsquo;un système à s&rsquo;adapter et à évoluer en fonction de la croissance de la demande en termes de ressources, de performance et de fonctionnalités.">
 <meta name="keywords" content="blog,developer,personal,teacher">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Session 1 : Introduction à l&#39;architecture web"/>
-<meta name="twitter:description" content="Qu&rsquo;est-ce que l&rsquo;architecture web ? Link to heading L&rsquo;architecture web désigne la manière dont les différents éléments d&rsquo;une application web (services, bases de données, front-end, etc.) sont organisés et interagissent entre eux. Elle détermine la façon dont l&rsquo;application web sera conçue, développée, déployée et maintenue.
-Differentes architectures : Link to heading Il existe plusieurs types d&rsquo;architecture web, qui varient selon la manière dont les différents éléments de l&rsquo;application sont séparés et communiquent entre eux."/>
+<meta name="twitter:title" content="Session 2 : Conception d’une architecture web "/>
+<meta name="twitter:description" content="Les critères de choix d&rsquo;une architecture web Link to heading Lorsqu&rsquo;on doit décider quelle architecture adopter pour une application web, il est important de prendre en compte plusieurs critères qui vont influencer sa performance, sa scalabilité et sa flexibilité. Voici quelques exemples de critères à prendre en compte :
+Scalabilité : la capacité d&rsquo;un système à s&rsquo;adapter et à évoluer en fonction de la croissance de la demande en termes de ressources, de performance et de fonctionnalités."/>
 
-<meta property="og:title" content="Session 1 : Introduction à l&#39;architecture web" />
-<meta property="og:description" content="Qu&rsquo;est-ce que l&rsquo;architecture web ? Link to heading L&rsquo;architecture web désigne la manière dont les différents éléments d&rsquo;une application web (services, bases de données, front-end, etc.) sont organisés et interagissent entre eux. Elle détermine la façon dont l&rsquo;application web sera conçue, développée, déployée et maintenue.
-Differentes architectures : Link to heading Il existe plusieurs types d&rsquo;architecture web, qui varient selon la manière dont les différents éléments de l&rsquo;application sont séparés et communiquent entre eux." />
+<meta property="og:title" content="Session 2 : Conception d’une architecture web " />
+<meta property="og:description" content="Les critères de choix d&rsquo;une architecture web Link to heading Lorsqu&rsquo;on doit décider quelle architecture adopter pour une application web, il est important de prendre en compte plusieurs critères qui vont influencer sa performance, sa scalabilité et sa flexibilité. Voici quelques exemples de critères à prendre en compte :
+Scalabilité : la capacité d&rsquo;un système à s&rsquo;adapter et à évoluer en fonction de la croissance de la demande en termes de ressources, de performance et de fonctionnalités." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://electrosenpai.github.io/architecture/lesson1/" /><meta property="article:section" content="architecture" />
 <meta property="article:published_time" content="2022-12-29T10:00:16+01:00" />
@@ -157,391 +157,275 @@ Differentes architectures : Link to heading Il existe plusieurs types d&rsquo;ar
     <header>
       <h1 class="title">
         <a class="title-link" href="https://electrosenpai.github.io/architecture/lesson1/">
-          Session 1 : Introduction à l&#39;architecture web
+          Session 2 : Conception d’une architecture web 
         </a>
       </h1>
     </header>
 
-    <h1 id="quest-ce-que-larchitecture-web-">
-  Qu&rsquo;est-ce que l&rsquo;architecture web ?
-  <a class="heading-link" href="#quest-ce-que-larchitecture-web-">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h1>
-<p>L&rsquo;architecture web désigne la manière dont les différents éléments d&rsquo;une application web (services, bases de données, front-end, etc.) sont organisés et interagissent entre eux. Elle détermine la façon dont l&rsquo;application web sera conçue, développée, déployée et maintenue.</p>
-<h1 id="differentes-architectures-">
-  Differentes architectures :
-  <a class="heading-link" href="#differentes-architectures-">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h1>
-<p>Il existe plusieurs types d&rsquo;architecture web, qui varient selon la manière dont les différents éléments de l&rsquo;application sont séparés et communiquent entre eux. Voici quelques exemples :</p>
-<ul>
-<li>
-<p><strong>Architecture monolithe</strong> : tous les éléments de l&rsquo;application sont regroupés dans un seul et même codebase et sont déployés ensemble. Cette architecture est simple à mettre en place mais peut être difficile à évoluer et à maintenir à mesure que l&rsquo;application grandit.</p>
-</li>
-<li>
-<p><strong>Architecture microservices</strong> : chaque élément de l&rsquo;application est développé sous forme de microservice indépendant, qui expose des interfaces de communication bien définies aux autres microservices. Cette architecture permet une grande flexibilité et une meilleure scalabilité, mais peut être plus complexe à mettre en œuvre et à maintenir du fait de la nécessité de gérer un grand nombre de microservices.</p>
-</li>
-<li>
-<p><strong>Architecture Serverless</strong> : les microservices sont exécutés sur une plateforme en tant que fonctions sans serveur, qui sont déclenchées par des événements et facturées à l&rsquo;utilisation. Cette architecture permet une très grande scalabilité et une faible latence, mais peut être coûteuse à mesure que l&rsquo;application grandit.</p>
-</li>
-</ul>
-<p>Il n&rsquo;y a pas de type d&rsquo;architecture web qui convient à tous les cas d&rsquo;utilisation, et le choix de l&rsquo;architecture dépend de nombreux facteurs tels que la taille de l&rsquo;application, les contraintes de temps et de budget, les exigences en matière de performances et de disponibilité, etc.</p>
-<h2 id="architecture-monolithe">
-  Architecture monolithe:
-  <a class="heading-link" href="#architecture-monolithe">
+    <h2 id="les-critères-de-choix-dune-architecture-web">
+  Les critères de choix d&rsquo;une architecture web
+  <a class="heading-link" href="#les-crit%c3%a8res-de-choix-dune-architecture-web">
     <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
-<p>L&rsquo;architecture monolithe est une approche de développement d&rsquo;application web qui consiste à regrouper tous les éléments de l&rsquo;application dans un seul et même codebase et à les déployer ensemble. Elle est souvent utilisée pour les applications de petite et moyenne taille, qui n&rsquo;ont pas besoin de scalabilité ou de flexibilité élevées.</p>
-<h3 id="avantages-de-larchitecture-monolithe">
-  Avantages de l&rsquo;architecture monolithe
-  <a class="heading-link" href="#avantages-de-larchitecture-monolithe">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<p>L&rsquo;architecture monolithe présente plusieurs avantages, qui en font une solution intéressante pour certaines applications :</p>
+<p>Lorsqu&rsquo;on doit décider quelle architecture adopter pour une application web, il est important de prendre en compte plusieurs critères qui vont influencer sa performance, sa scalabilité et sa flexibilité. Voici quelques exemples de critères à prendre en compte :</p>
 <ul>
-<li>
-<p><strong>Simplicité de mise en œuvre et de déploiement</strong> : l&rsquo;architecture monolithe est très simple à mettre en place et à déployer, car elle ne nécessite pas de gérer de nombreux microservices ou fonctions indépendants. Il suffit de développer l&rsquo;application dans un seul codebase et de la déployer en une seule fois sur un serveur ou une plateforme de cloud.</p>
-</li>
-<li>
-<p><strong>Facilité de développement et de maintenance</strong> : dans l&rsquo;architecture monolithe, tous les éléments de l&rsquo;application sont regroupés dans le même codebase, ce qui rend le développement et la maintenance plus faciles. Les développeurs peuvent travailler sur tous les aspects de l&rsquo;application en même temps et utiliser les mêmes outils de développement et de versionning.</p>
-</li>
-<li>
-<p><strong>Coûts de développement et de maintenance réduits</strong> : l&rsquo;architecture monolithe permet de réduire les coûts de développement et de maintenance, car elle ne nécessite pas de gérer de nombreux microservices ou fonctions indépendantes. Elle est donc particulièrement adaptée aux petites et moyennes applications qui n&rsquo;ont pas besoin de scalabilité ou de flexibilité élevées.</p>
-</li>
+<li>Scalabilité : la capacité d&rsquo;un système à s&rsquo;adapter et à évoluer en fonction de la croissance de la demande en termes de ressources, de performance et de fonctionnalités.</li>
+<li>Flexibilité : la capacité d&rsquo;un système à évoluer et à s&rsquo;adapter rapidement aux changements de requirements ou de contexte.</li>
+<li>Fiabilité : la capacité d&rsquo;un système à fonctionner de manière stable et sans interruption.</li>
+<li>Coût : le coût total de possession (TCO) d&rsquo;un système, c&rsquo;est-à-dire tous les coûts associés à son développement, son déploiement et son maintenance. On peut également parler de FinOps</li>
+<li>Sécurité : la capacité d&rsquo;un système à protéger les données et les ressources contre les attaques ou les accès non autorisés.</li>
 </ul>
-<h3 id="inconvénients-de-larchitecture-monolithe">
-  Inconvénients de l&rsquo;architecture monolithe
-  <a class="heading-link" href="#inconv%c3%a9nients-de-larchitecture-monolithe">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<p>L&rsquo;architecture monolithe présente cependant aussi plusieurs inconvénients, qui peuvent rendre son utilisation moins adaptée à certaines applications :</p>
-<ul>
-<li>
-<p><strong>Manque de scalabilité et de flexibilité</strong> : l&rsquo;architecture monolithe ne permet pas de scaler facilement les différents éléments de l&rsquo;application de manière indépendante. Si une partie de l&rsquo;application devient très populaire et nécessite plus de ressources, il faut déployer une nouvelle version de l&rsquo;application entière, ce qui peut être coûteux et prendre du temps. De même, il est difficile de mettre à jour ou de remplacer une partie de l&rsquo;application sans affecter l&rsquo;ensemble de l&rsquo;application.</p>
-</li>
-<li>
-<p><strong>Complexité croissante à mesure que l&rsquo;application grandit</strong> : l&rsquo;architecture monolithe peut devenir de plus en plus complexe à mesure que l&rsquo;application grandit et qu&rsquo;elle inclut de nouvelles fonctionnalités. Il peut être difficile de maintenir une vue d&rsquo;ensemble de l&rsquo;application et de la développer de manière cohérente, ce qui peut entraîner des problèmes de qualité et de performance.</p>
-</li>
-<li>
-<p><strong>Difficulté à gérer les dépendances entre les éléments de l&rsquo;application</strong> : dans l&rsquo;architecture monolithe, il est difficile de gérer les dépendances entre les différents éléments de l&rsquo;application, ce qui peut entraîner des problèmes de développement et de maintenance.</p>
-</li>
-</ul>
-<p>Il est important de prendre en compte ces avantages et inconvénients lors du choix de l&rsquo;architecture monolithe, en fonction des besoins de l&rsquo;application et de son évolution prévue.</p>
-<h3 id="exemples-dapplications-web-monolithes">
-  Exemples d&rsquo;applications web monolithes
-  <a class="heading-link" href="#exemples-dapplications-web-monolithes">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<p>Voici quelques exemples d&rsquo;applications web qui peuvent être développées selon une architecture monolithe :</p>
-<ul>
-<li>Un site de e-commerce de petite et moyenne taille, qui propose une gamme limitée de produits et qui n&rsquo;a pas besoin de scalabilité élevée.</li>
-<li>Un site de blog ou de journal en ligne, qui affiche du contenu statique et qui n&rsquo;a pas besoin de fonctionnalités de mise à jour en temps réel.</li>
-<li>Un site de gestion de projet pour une équipe restreinte, qui ne nécessite pas de scalabilité élevée ni de flexibilité.</li>
-</ul>
-<h3 id="conclusion">
-  Conclusion
-  <a class="heading-link" href="#conclusion">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<p>L&rsquo;architecture monolithe est une approche de développement d&rsquo;application web simple et adaptée aux applications de petite et moyenne taille qui n&rsquo;ont pas besoin de scalabilité ou de flexibilité élevées. Elle présente des avantages en termes de simplicité de mise en œuvre et de déploiement, de facilité de développement et de maintenance, et de coûts réduits. Cependant, elle peut être moins adaptée aux applications qui ont besoin de scalabilité ou de flexibilité élevées, ou qui sont amenées à grandir de manière importante, car elle peut devenir complexe et difficile à maintenir dans ces cas.</p>
-<h2 id="larchitecture-microservices">
-  L&rsquo;architecture microservices
-  <a class="heading-link" href="#larchitecture-microservices">
+<p>Il est important de peser chaque critère et de déterminer lesquels sont les plus importants en fonction des besoins de l&rsquo;application.</p>
+<h2 id="la-modélisation-des-services-web-avec-les-diagrammes-de-séquence-et-de-cas-dutilisation">
+  La modélisation des services web avec les diagrammes de séquence et de cas d&rsquo;utilisation
+  <a class="heading-link" href="#la-mod%c3%a9lisation-des-services-web-avec-les-diagrammes-de-s%c3%a9quence-et-de-cas-dutilisation">
     <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
-<p>L&rsquo;architecture microservices est une approche de développement d&rsquo;application web qui consiste à regrouper les éléments de l&rsquo;application en plusieurs microservices indépendants, qui communiquent entre eux pour réaliser les fonctionnalités de l&rsquo;application. Cette approche est souvent utilisée pour les applications de grande taille ou à forte croissance, qui ont besoin de scalabilité et de flexibilité élevées.</p>
-<h3 id="avantages-de-larchitecture-microservices">
-  Avantages de l&rsquo;architecture microservices
-  <a class="heading-link" href="#avantages-de-larchitecture-microservices">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<p>L&rsquo;architecture microservices présente plusieurs avantages, qui en font une solution intéressante pour certaines applications :</p>
-<ul>
-<li>
-<p><strong>Scalabilité et flexibilité élevées</strong> : dans l&rsquo;architecture microservices, chaque microservice est indépendant et peut être déployé et évolué de manière indépendante. Cela permet de scaler facilement les différents éléments de l&rsquo;application de manière indépendante et de mettre à jour ou de remplacer une partie de l&rsquo;application sans affecter l&rsquo;ensemble de l&rsquo;application.</p>
-</li>
-<li>
-<p><strong>Facilité de développement et de maintenance</strong> : dans l&rsquo;architecture microservices, chaque microservice est développé et maintenu par une équipe dédiée, ce qui rend le développement et la maintenance plus faciles. Les développeurs peuvent travailler sur un microservice en particulier et utiliser les outils de développement et de versionning qui leur conviennent le mieux.</p>
-</li>
-<li>
-<p><strong>Meilleure gestion des dépendances entre les éléments de l&rsquo;application</strong> : dans l&rsquo;architecture microservices, chaque microservice est indépendant et n&rsquo;a pas de dépendances fortes avec les autres microservices. Cela permet de mieux gérer les dépendances entre les différents éléments de l&rsquo;application et de limiter les problèmes de développement et de maintenance.</p>
-</li>
-</ul>
-<h3 id="inconvénients-de-larchitecture-microservices">
-  Inconvénients de l&rsquo;architecture microservices
-  <a class="heading-link" href="#inconv%c3%a9nients-de-larchitecture-microservices">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<p>L&rsquo;architecture microservices présente cependant aussi plusieurs inconvénients, qui peuvent rendre son utilisation moins adaptée à certaines applications :</p>
-<ul>
-<li>
-<p><strong>Coûts de développement et de maintenance élevés</strong> : l&rsquo;architecture microservices nécessite de gérer de nombreux microservices indépendants, ce qui peut augmenter les coûts de développement et de maintenance. Il faut également prévoir des outils de gestion de microservices, comme un registry ou un service mesh, ce qui peut ajouter des coûts supplémentaires.</p>
-</li>
-<li>
-<p><strong>Complexité croissante à mesure que l&rsquo;application grandit</strong> : l&rsquo;architecture microservices peut devenir de plus en plus complexe à mesure que l&rsquo;application grandit et qu&rsquo;elle inclut de nouveaux microservices. Il peut être difficile de maintenir une vue d&rsquo;ensemble de l&rsquo;ensemble des microservices et de leurs interactions, ce qui peut entraîner des problèmes de qualité et de performance.</p>
-</li>
-<li>
-<p><strong>Difficulté à gérer les erreurs et les pannes</strong> : dans l&rsquo;architecture microservices, il est difficile de gérer les erreurs et les pannes, car chaque microservice est indépendant et peut être impacté par des problèmes de disponibilité ou de performance. Il faut mettre en place des outils de monitoring et de gestion des erreurs pour surveiller l&rsquo;état des microservices et intervenir rapidement en cas de problème.</p>
-</li>
-</ul>
-<h3 id="exemples-dapplications-web-microservices">
-  Exemples d&rsquo;applications web microservices
-  <a class="heading-link" href="#exemples-dapplications-web-microservices">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<p>Voici quelques exemples d&rsquo;applications web qui peuvent être développées selon une architecture microservices :</p>
-<ul>
-<li>Un site de e-commerce de grande taille, qui propose une large gamme de produits et qui a besoin de scalabilité élevée pour gérer de nombreux utilisateurs et commandes.</li>
-<li>Un site de médias en ligne, qui affiche du contenu dynamique et qui a besoin de fonctionnalités de mise à jour en temps réel.</li>
-<li>Un site de gestion de projet pour une équipe de grande taille, qui nécessite une flexibilité élevée et la possibilité de développer et de mettre à jour rapidement les différentes fonctionnalités.</li>
-</ul>
-<h3 id="conclusion-1">
-  Conclusion
-  <a class="heading-link" href="#conclusion-1">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h3>
-<p>L&rsquo;architecture microservices est une approche de développement d&rsquo;application web adaptée aux applications de grande taille ou à forte croissance qui ont besoin de scalabilité et de flexibilité élevées. Elle présente des avantages en termes de scalabilité, de flexibilité, de facilité de développement et de maintenance, et de meilleure gestion des dépendances. Cependant, elle peut être moins adaptée aux applications de petite ou moyenne taille ou à faible croissance, car elle peut être coûteuse et complexe à mettre en œuvre et à maintenir. Il est important de bien évaluer les exigences en termes de scalabilité, de flexibilité, de coûts et de délai, afin de choisir l&rsquo;architecture la plus adaptée à votre projet.</p>
-<h2 id="en-résumé-">
-  En Résumé :
-  <a class="heading-link" href="#en-r%c3%a9sum%c3%a9-">
+<p>La modélisation des services web peut être faite à l&rsquo;aide de différents diagrammes, notamment les diagrammes de séquence et de cas d&rsquo;utilisation.</p>
+<p>Le diagramme de séquence permet de modéliser les interactions entre les différents éléments d&rsquo;un système, en particulier les échanges de messages entre les services. Il permet de visualiser l&rsquo;ordre dans lequel les messages sont envoyés et reçus, ainsi que les conditions de déclenchement de chaque message.</p>
+<p>Voici un exemple de diagramme de séquence modélisant l&rsquo;interaction entre un client et un service web :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Client Service web
+</span></span><span style="display:flex;"><span>-----------------&gt; Requête HTTP -----------------&gt;
+</span></span><span style="display:flex;"><span>(GET /resource)
+</span></span><span style="display:flex;"><span>&lt;----------------- Réponse HTTP &lt;-----------------
+</span></span><span style="display:flex;"><span>(200 OK)
+</span></span></code></pre></div><p>Le diagramme de cas d&rsquo;utilisation permet de modéliser les différentes actions que peuvent réaliser les utilisateurs d&rsquo;un système, ainsi que les rôles et les responsabilités de chaque acteur impliqué. Il permet de visualiser les limites et les contraintes du système, ainsi que les interactions avec d&rsquo;autres systèmes ou services.</p>
+<p>Voici un exemple de diagramme de cas d&rsquo;utilisation modélisant l&rsquo;interaction entre un client et un service web :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>       +---------------+
+</span></span><span style="display:flex;"><span>       |  Client       |
+</span></span><span style="display:flex;"><span>       +---------------+
+</span></span><span style="display:flex;"><span>       |               |
+</span></span><span style="display:flex;"><span>       |   Afficher    |
+</span></span><span style="display:flex;"><span>       |   ressource   |
+</span></span><span style="display:flex;"><span>       |               |
+</span></span><span style="display:flex;"><span>       |  Requête HTTP |
+</span></span><span style="display:flex;"><span>       |  (GET /resource)
+</span></span><span style="display:flex;"><span>       |               |
+</span></span><span style="display:flex;"><span>       |  Réponse HTTP |
+</span></span><span style="display:flex;"><span>       |  (200 OK)     |
+</span></span><span style="display:flex;"><span>       |               |
+</span></span><span style="display:flex;"><span>       +---------------+
+</span></span><span style="display:flex;"><span>            |   |
+</span></span><span style="display:flex;"><span>            |   |
+</span></span><span style="display:flex;"><span>            v   v
+</span></span><span style="display:flex;"><span>       +---------------+
+</span></span><span style="display:flex;"><span>       |  Service web  |
+</span></span><span style="display:flex;"><span>       +---------------+
+</span></span></code></pre></div><h2 id="les-patterns-darchitecture-web-couramment-utilisés">
+  Les patterns d&rsquo;architecture web couramment utilisés
+  <a class="heading-link" href="#les-patterns-darchitecture-web-couramment-utilis%c3%a9s">
     <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
-<p>Chaque type d&rsquo;architecture web présente ses propres avantages et inconvénients, qui doivent être pris en compte lors du choix de l&rsquo;architecture. Voici quelques exemples :</p>
-<ul>
-<li>
-<p><strong>Avantages de l&rsquo;architecture monolithe</strong> :</p>
-<ul>
-<li>Simplicité de mise en œuvre et de déploiement</li>
-<li>Faibles coûts de développement et de maintenance</li>
-<li>Facilité de modification et de mise à jour de l&rsquo;application</li>
-</ul>
-</li>
-<li>
-<p><strong>Inconvénients de l&rsquo;architecture monolithe</strong> :</p>
-<ul>
-<li>Difficulté à scaler et à évoluer l&rsquo;application à mesure qu&rsquo;elle grandit</li>
-<li>Faible flexibilité et réutilisabilité des composants de l&rsquo;application</li>
-<li>Risque de dépendance forte entre les composants de l&rsquo;application</li>
-</ul>
-</li>
-<li>
-<p><strong>Avantages de l&rsquo;architecture microservices</strong> :</p>
-<ul>
-<li>Grande flexibilité et réutilisabilité des microservices</li>
-<li>Meilleure scalabilité et disponibilité de l&rsquo;application</li>
-<li>Facilité de modification et de mise à jour des microservices indépendamment les uns des autres</li>
-</ul>
-</li>
-<li>
-<p><strong>Inconvénients de l&rsquo;architecture microservices</strong> :</p>
-<ul>
-<li>Complexité de mise en œuvre et de déploiement du fait de la nécessité de gérer un grand nombre de microservices</li>
-<li>Coûts de développement et de maintenance plus élevés</li>
-<li>Risque de dépendance forte entre les microservices</li>
-</ul>
-</li>
-<li>
-<p><strong>Avantages de l&rsquo;architecture Serverless</strong> :</p>
-<ul>
-<li>Très grande scalabilité et disponibilité de l&rsquo;application</li>
-<li>Faibles coûts à mesure que l&rsquo;application grandit</li>
-<li>Faible latence et temps de réponse des fonctions</li>
-</ul>
-</li>
-<li>
-<p><strong>Inconvénients de l&rsquo;architecture Serverless</strong> :</p>
-<ul>
-<li>Complexité de mise en œuvre et de déploiement</li>
-<li>Coûts de développement et de maintenance plus élevés</li>
-<li>Risque de dépendance forte entre les fonctions</li>
-</ul>
-</li>
-</ul>
-<p>Il est important de prendre en compte ces avantages et inconvénients lors du choix de l&rsquo;architecture web, en fonction des besoins et des objectifs de l&rsquo;application.</p>
-<h1 id="acteurs-et-protocoles-de-communication-en-architecture-web">
-  Acteurs et protocoles de communication en architecture web
-  <a class="heading-link" href="#acteurs-et-protocoles-de-communication-en-architecture-web">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h1>
-<p>Dans une architecture web, il y a plusieurs acteurs qui jouent un rôle clé dans la communication et l&rsquo;interaction entre les différents éléments de l&rsquo;application. Ces acteurs sont le client, le serveur et le réseau.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>          +--------------------+
-</span></span><span style="display:flex;"><span>          |      Client        |
-</span></span><span style="display:flex;"><span>          +--------------------+
-</span></span><span style="display:flex;"><span>                  |
-</span></span><span style="display:flex;"><span>             Requête HTTP 
-</span></span><span style="display:flex;"><span>                  |               
-</span></span><span style="display:flex;"><span>                  V               
-</span></span><span style="display:flex;"><span>          +--------------------+
-</span></span><span style="display:flex;"><span>          |      Réseau        |
-</span></span><span style="display:flex;"><span>          +--------------------+
-</span></span><span style="display:flex;"><span>                 |
-</span></span><span style="display:flex;"><span>             Requête HTTP 
-</span></span><span style="display:flex;"><span>                  |               
-</span></span><span style="display:flex;"><span>                  V         
-</span></span><span style="display:flex;"><span>          +--------------------+
-</span></span><span style="display:flex;"><span>          |      Serveur       |
-</span></span><span style="display:flex;"><span>          +--------------------+
-</span></span></code></pre></div><h2 id="le-client">
-  Le client
-  <a class="heading-link" href="#le-client">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
-<p>Le client est l&rsquo;application ou le dispositif qui envoie une demande de données ou de services à un serveur. En architecture web, le client peut être un navigateur web (comme Chrome, Firefox ou Safari), une application mobile (comme une application Android ou iOS), ou tout autre dispositif qui peut envoyer des requêtes HTTP (Hypertext Transfer Protocol) à un serveur.</p>
-<h2 id="le-serveur">
-  Le serveur
-  <a class="heading-link" href="#le-serveur">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
-<p>Le serveur est l&rsquo;application ou le dispositif qui reçoit les demandes de données ou de services envoyées par le client, et qui envoie une réponse en retour. En architecture web, le serveur peut être un serveur web (comme Apache ou Nginx), un serveur d&rsquo;application (comme Tomcat ou Wildfly), ou tout autre dispositif qui peut recevoir des requêtes HTTP et envoyer des réponses.</p>
-<h3 id="serveur-web-">
-  Serveur Web :
-  <a class="heading-link" href="#serveur-web-">
+<p>Il existe plusieurs patterns d&rsquo;architecture web couramment utilisés pour modéliser et construire des applications distribuées. Voici quelques exemples de patterns fréquemment utilisés :</p>
+<h3 id="api-gateway-">
+  API Gateway :
+  <a class="heading-link" href="#api-gateway-">
     <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
-<p>Un serveur web est un logiciel qui exécute sur un ordinateur et qui est conçu pour accepter des requêtes HTTP (Hypertext Transfer Protocol) en provenance de clients, tels que des navigateurs web, et pour renvoyer des réponses HTTP à ces clients. Les serveurs web sont souvent utilisés pour héberger des sites web, c&rsquo;est-à-dire pour stocker, traiter et fournir les fichiers qui composent les pages web aux utilisateurs sur Internet.</p>
-<p>Les serveurs web sont généralement exécutés sur des ordinateurs qui sont connectés à Internet en permanence et qui sont configurés pour accepter des connexions réseau entrantes. Lorsqu&rsquo;un client envoie une requête HTTP à un serveur web, le serveur analyse la requête et envoie une réponse appropriée au client, qui peut être une page web, une image, un fichier audio ou tout autre type de données.</p>
-<p>Il existe plusieurs types de serveurs web, y compris les serveurs web Apache, Nginx et Microsoft IIS, qui sont tous largement utilisés sur Internet. En général, les serveurs web sont configurés et gérés par des administrateurs système ou des développeurs web, qui s&rsquo;assurent que le serveur fonctionne correctement et sécurisément.</p>
-<h3 id="serveur-dapplication-">
-  Serveur d&rsquo;application :
-  <a class="heading-link" href="#serveur-dapplication-">
+<p>Une API Gateway est une passerelle de communication qui sert de point d&rsquo;entrée unique et centralisé pour les différents services et composants de l&rsquo;application. Elle permet de mettre en place une interface de communication standardisée et normalisée, en gérant les routes, les protocoles, les sécurités, les performances, etc. L&rsquo;API Gateway s&rsquo;appuie sur des technologies comme les APIs REST, les WebHooks, les Events, etc. pour gérer les échanges de données et de messages entre les différents acteurs de l&rsquo;application.</p>
+<h2 id="pourquoi-utiliser-une-api-gateway-">
+  Pourquoi utiliser une API Gateway ?
+  <a class="heading-link" href="#pourquoi-utiliser-une-api-gateway-">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Il y a plusieurs raisons pour lesquelles il peut être judicieux d&rsquo;utiliser une API Gateway :</p>
+<ul>
+<li>
+<p>Simplification et sécurisation de l&rsquo;intégration et de l&rsquo;interopérabilité des services : l&rsquo;API Gateway permet de masquer et d&rsquo;abstraire les implémentations et les spécificités des services, en leur proposant une interface commune et normalisée. Cela facilite et sécurise l&rsquo;intégration et l&rsquo;interopérabilité des services, en évitant les redondances et les erreurs de communication.</p>
+</li>
+<li>
+<p>Gestion des routes et des protocoles : l&rsquo;API Gateway permet de gérer les routes et les protocoles de communication entre les différents services et composants de l&rsquo;application. Elle peut par exemple rediriger les requêtes vers les services concernés, en fonction de leur URL ou de leur verbe HTTP. Elle peut également gérer les différents protocoles de communication, en les adaptant aux besoins et aux contextes de l&rsquo;application.</p>
+</li>
+<li>
+<p>Gestion des sécurités et des performances : l&rsquo;API Gateway permet de mettre en place des mécanismes de sécurité et de performance pour protéger et optimiser l&rsquo;accès aux services. Elle peut par exemple gérer les authentifications, les autorisations, les quotas, les caches, les compressions, etc. pour assurer la sécurité et la performance de l&rsquo;application.</p>
+</li>
+</ul>
+<h3 id="exemple-">
+  Exemple :
+  <a class="heading-link" href="#exemple-">
     <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
-<p>Un serveur d&rsquo;application est un logiciel qui exécute sur un ordinateur et qui est conçu pour gérer les applications et les services qui sont accessibles sur un réseau. Les serveurs d&rsquo;application sont généralement utilisés pour fournir une interface de programmation (API) qui peut être utilisée par d&rsquo;autres applications ou par des utilisateurs pour accéder à ces services.</p>
-<p>Les serveurs d&rsquo;application sont souvent utilisés pour exécuter des applications de gestion de bases de données, des applications de gestion de contenu, des applications de commerce électronique et de nombreuses autres applications qui nécessitent une interface de programmation pour être accessibles par d&rsquo;autres logiciels ou par des utilisateurs finaux. Ils peuvent également être utilisés pour fournir des services tels que l&rsquo;authentification, l&rsquo;autorisation et la gestion des utilisateurs à d&rsquo;autres applications.</p>
-<p>Il existe plusieurs types de serveurs d&rsquo;application, tels que les serveurs d&rsquo;application Java, les serveurs d&rsquo;application Microsoft .NET et les serveurs d&rsquo;application Ruby on Rails, Python Django &hellip; En général, les serveurs d&rsquo;application sont configurés et gérés par des administrateurs système, SRE, Devops ou des développeurs d&rsquo;application, qui s&rsquo;assurent que le serveur fonctionne correctement et sécurisément.</p>
-<h3 id="serveur-de-base-de-données-">
-  Serveur de base de données :
-  <a class="heading-link" href="#serveur-de-base-de-donn%c3%a9es-">
+<p>Voici quelques exemples d&rsquo;utilisation d&rsquo;une API Gateway :</p>
+<ul>
+<li>Gestion des demandes de trafic : Une API Gateway peut être utilisée pour gérer les demandes de trafic et répartir les requêtes entre les différents services qui composent l&rsquo;application.</li>
+<li>Sécurité : Une API Gateway peut être utilisée pour mettre en place des contrôles de sécurité, tels que l&rsquo;authentification et l&rsquo;autorisation, avant que les requêtes ne soient transmises aux services cibles.</li>
+<li>Transformation des requêtes : Une API Gateway peut être utilisée pour transformer les requêtes entrantes afin de les adapter aux spécificités des services cibles. Par exemple, elle peut ajouter ou retirer des en-têtes, ou encore convertir les données de la requête dans un format différent.</li>
+<li>Monitoring et suivi des erreurs : Une API Gateway peut être utilisée pour surveiller les performances des services et détecter les erreurs, afin de permettre une meilleure gestion de la disponibilité de l&rsquo;application.</li>
+</ul>
+<p>Voici quelques exemples de logiciels d&rsquo;API Gateway :</p>
+<ul>
+<li>Amazon API Gateway : Ce service de cloud computing proposé par Amazon Web Services permet de créer, publier, maintenir et surveiller des APIs pour connecter les applications avec les données et les fonctionnalités de l&rsquo;application.</li>
+<li>Kong : Cette plateforme open source d&rsquo;API Gateway permet de gérer les requêtes entrantes, de sécuriser les communications et de surveiller les performances des APIs.</li>
+<li>Tyk : Cette plateforme open source d&rsquo;API Gateway offre une large gamme de fonctionnalités, y compris la gestion du trafic, la sécurisation des communications et la surveillance des performances.</li>
+<li>Express Gateway : Cette solution open source basée sur Node.js est conçue pour être facile à utiliser et à déployer, et offre des fonctionnalités de gestion du trafic, de sécurité et de surveillance des performances.</li>
+</ul>
+<h3 id="load-balancing-">
+  Load Balancing :
+  <a class="heading-link" href="#load-balancing-">
     <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
-<p>Un serveur de base de données est un logiciel qui exécute sur un ordinateur et qui est conçu pour stocker et gérer les données dans une base de données. Les bases de données sont utilisées pour stocker et organiser de grandes quantités de données de manière structurée, de sorte qu&rsquo;elles puissent être facilement consultées, mises à jour et gérées.</p>
-<p>Les serveurs de base de données sont souvent utilisés pour stocker et gérer les données de grandes organisations, telles que les entreprises, les gouvernements et les universités. Ils offrent une interface de programmation (API) qui peut être utilisée par d&rsquo;autres applications ou par des utilisateurs pour accéder et gérer les données dans la base de données.</p>
-<p>Il existe plusieurs types de serveurs de base de données, tels que MySQL, Microsoft SQL Server et Oracle, qui sont tous largement utilisés dans de nombreux domaines. En général, les serveurs de base de données sont configurés et gérés par des administrateurs de base de données, qui s&rsquo;assurent que le serveur fonctionne correctement et sécurisément.</p>
-<h2 id="le-réseau">
-  Le réseau
-  <a class="heading-link" href="#le-r%c3%a9seau">
+<p>Le load balancing est une technique utilisée pour répartir la charge de travail sur plusieurs serveurs ou instances de traitement afin d&rsquo;optimiser la performance et la disponibilité d&rsquo;un système. Il est souvent utilisé dans les environnements de production pour gérer les pics de charge et assurer la continuité de service.</p>
+<p>Il existe plusieurs types de load balancing, notamment le load balancing de niveau 7 (basé sur les couches 7 du modèle OSI) et le load balancing de niveau 4 (basé sur les couches 4 du modèle OSI). Le load balancing de niveau 7 prend en compte les informations de l&rsquo;application, comme les en-têtes HTTP, pour déterminer comment répartir la charge de travail. Le load balancing de niveau 4 se base uniquement sur les informations de transport, comme l&rsquo;adresse IP et le numéro de port, pour répartir la charge de travail.</p>
+<p>Le load balancing peut être mis en place de différentes manières, comme en utilisant un équilibreur de charge dédié ou en utilisant un logiciel de load balancing sur un serveur existant. Il est également possible de configurer le load balancing en utilisant un service de cloud computing, comme Amazon Elastic Load Balancing ou Google Cloud Load Balancer.</p>
+<h4 id="load-balancer-">
+  Load balancer :
+  <a class="heading-link" href="#load-balancer-">
     <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
-</h2>
-<p>Le réseau est l&rsquo;ensemble des équipements et des protocoles qui permettent la communication entre le client et le serveur. En architecture web, le réseau peut être le réseau local (LAN), le réseau étendu (WAN), ou Internet.</p>
-<h2 id="protocoles-de-communication">
-  Protocoles de communication
-  <a class="heading-link" href="#protocoles-de-communication">
+</h4>
+<p>Un load balancer (équilibreur de charge) est un composant ou un service qui permet de répartir la charge de travail sur plusieurs serveurs ou instances de traitement afin d&rsquo;optimiser la performance et la disponibilité d&rsquo;un système. Il est généralement utilisé dans les environnements de production pour gérer les pics de charge et assurer la continuité de service.</p>
+<p>Il existe plusieurs technologies et logiciels qui peuvent être utilisés pour mettre en place un load balancer, parmi lesquels :</p>
+<ul>
+<li>HAProxy : un logiciel open source qui permet de mettre en place un load balancer de niveau 7 (basé sur les couches 7 du modèle OSI) sur n&rsquo;importe quel système d&rsquo;exploitation.</li>
+<li>NGINX : un serveur web open source qui peut être utilisé comme load balancer de niveau 7 ou de niveau 4 (basé sur les couches 4 du modèle OSI).</li>
+<li>Amazon Elastic Load Balancer (ELB) : un service de cloud computing proposé par Amazon Web Services qui permet de mettre en place un load balancer de niveau 4 ou de niveau 7 sur l&rsquo;infrastructure cloud d&rsquo;AWS (attention le niveau 7 s&rsquo;appelle un ALB).</li>
+<li>Google Cloud Load Balancer : un service de cloud computing proposé par Google Cloud Platform qui permet de mettre en place un load balancer de niveau 4 ou de niveau 7 sur l&rsquo;infrastructure cloud de Google.</li>
+</ul>
+<h3 id="circuit-breaker-">
+  Circuit Breaker :
+  <a class="heading-link" href="#circuit-breaker-">
     <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
-</h2>
-<p>Un protocole de communication est un ensemble de règles et de conventions qui définissent comment deux ou plusieurs parties (par exemple, des ordinateurs, des serveurs, des appareils mobiles) peuvent échanger des informations sur un réseau (par exemple, Internet, un LAN). Il permet de standardiser la manière de formater, de transmettre et de recevoir les données, afin de garantir une compréhension mutuelle et une interaction fiable entre les parties.</p>
-<h2 id="qcm--introduction-à-larchitecture-web">
-  QCM : Introduction à l&rsquo;architecture web
-  <a class="heading-link" href="#qcm--introduction-%c3%a0-larchitecture-web">
+</h3>
+<ul>
+<li>Circuit Breaker : ce pattern consiste à mettre en place un mécanisme de protection pour prévenir les erreurs de cascades et les dégradations de performance dans un environnement distribué. Le Circuit Breaker permet de couper temporairement l&rsquo;accès à un service défaillant, afin de limiter les dommages et de permettre une récupération progressive.</li>
+</ul>
+<p>Un circuit breaker est un patron de conception qui permet de protéger une application contre les pannes de sous-systèmes en désactivant temporairement les appels de service à ces sous-systèmes qui échouent de manière répétée.</p>
+<p>Le circuit breaker suit un processus simple :</p>
+<ul>
+<li>
+<ol>
+<li>Lorsqu&rsquo;un appel de service échoue, le circuit breaker enregistre cet échec.</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Si un nombre suffisamment élevé d&rsquo;appels de service échouent de manière consécutive, le circuit breaker passe en mode &ldquo;ouvert&rdquo; et bloque tous les appels de service futurs vers le sous-système en question.</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Pendant que le circuit breaker est ouvert, il surveille en continu si les appels de service réussissent à nouveau.</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>Si un nombre suffisamment élevé d&rsquo;appels de service réussissent de manière consécutive, le circuit breaker passe en mode &ldquo;fermé&rdquo; et autorise à nouveau les appels de service vers le sous-système.</li>
+</ol>
+</li>
+</ul>
+<p>L&rsquo;utilisation d&rsquo;un circuit breaker offre plusieurs avantages, tels que :</p>
+<ul>
+<li>La protection contre les pannes de sous-systèmes : en désactivant temporairement les appels de service qui échouent de manière répétée, l&rsquo;application est protégée contre les pannes de sous-systèmes qui pourraient la mettre hors service.</li>
+<li>La réduction de la charge sur le sous-système : en bloquant les appels de service vers le sous-système en panne, la charge sur celui-ci est réduite, ce qui peut lui permettre de se rétablir plus rapidement.</li>
+<li>La gestion des temps de réponse : en désactivant temporairement les appels de service qui prennent trop de temps, l&rsquo;application peut mieux gérer ses temps de réponse et éviter les retards.</li>
+</ul>
+<h4 id="exemple--1">
+  Exemple :
+  <a class="heading-link" href="#exemple--1">
     <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
-</h2>
-<p>Voici un exemple de 5 questions qui peuvent tomber lors d&rsquo;un examen :</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>1. Qu&#39;est-ce que l&#39;architecture web ?
-</span></span><span style="display:flex;"><span>a) Un ensemble de technologies et de protocoles qui permettent de transférer des données sur un réseau, principalement sur Internet
-</span></span><span style="display:flex;"><span>b) Un système de gestion de contenu qui permet de publier et de gérer des sites web
-</span></span><span style="display:flex;"><span>c) Un système d&#39;exploitation qui permet d&#39;exécuter des applications web
-</span></span><span style="display:flex;"><span>d) Aucune de ces réponses n&#39;est correcte
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>2. Qu&#39;est-ce qu&#39;un serveur de base de données ?
-</span></span><span style="display:flex;"><span>a) Un ordinateur ou un logiciel qui permet de stocker, de gérer et de fournir des données (par exemple, des informations sur les clients ou les produits) sur un réseau, principalement sur Internet
-</span></span><span style="display:flex;"><span>b) Un navigateur web qui permet de consulter des données sur un réseau, principalement sur Internet
-</span></span><span style="display:flex;"><span>c) Un protocole de communication qui permet de transférer des données sur un réseau, principalement sur Internet
-</span></span><span style="display:flex;"><span>d) Aucune de ces réponses n&#39;est correcte
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>3. Qu&#39;est-ce qu&#39;un serveur web ?
-</span></span><span style="display:flex;"><span>a) Un ordinateur ou un logiciel qui permet de stocker, de gérer et de fournir des ressources (pages web, images, fichiers, etc.) sur un réseau, principalement sur Internet
-</span></span><span style="display:flex;"><span>b) Un navigateur web qui permet de consulter des ressources sur un réseau, principalement sur Internet
-</span></span><span style="display:flex;"><span>c) Un protocole de communication qui permet de transférer des données sur un réseau, principalement sur Internet
-</span></span><span style="display:flex;"><span>d) Aucune de ces réponses n&#39;est correcte
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>4. Qu&#39;est-ce qu&#39;un serveur d&#39;application ?
-</span></span><span style="display:flex;"><span>a) Un ordinateur ou un logiciel qui permet de stocker, de gérer et de fournir des ressources (pages web, images, fichiers, etc.) sur un réseau, principalement sur Internet
-</span></span><span style="display:flex;"><span>b) Un navigateur web qui permet de consulter des ressources sur un réseau, principalement sur Internet
-</span></span><span style="display:flex;"><span>c) Un protocole de communication qui permet de transférer des données sur un réseau, principalement sur Internet
-</span></span><span style="display:flex;"><span>d) Un ordinateur ou un logiciel qui permet d&#39;exécuter des applications (par exemple, une application de gestion de contacts ou de gestion de projets) sur un réseau, principalement sur Internet
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>5. Qu&#39;est-ce qu&#39;un client ?
-</span></span><span style="display:flex;"><span>a) Un ordinateur ou un logiciel qui permet de stocker, de gérer et de fournir des ressources (pages web, images, fichiers, etc.) sur un réseau, principalement sur Internet
-</span></span><span style="display:flex;"><span>b) Un navigateur web qui permet de consulter des ressources sur un réseau, principalement sur Internet
-</span></span><span style="display:flex;"><span>c) Un protocole de communication qui permet de transférer des données sur un réseau, principalement sur Internet
-</span></span><span style="display:flex;"><span>d) Un ordinateur ou un logiciel qui permet d&#39;exécuter des applications (par exemple, une application de gestion de contacts ou de gestion de projets) sur un réseau, principalement sur Internet
-</span></span></code></pre></div><h2 id="exercice--modéliser-une-architecture-web-en-utilisant-un-diagramme-de-cas-dutilisation">
-  Exercice : modéliser une architecture web en utilisant un diagramme de cas d&rsquo;utilisation
-  <a class="heading-link" href="#exercice--mod%c3%a9liser-une-architecture-web-en-utilisant-un-diagramme-de-cas-dutilisation">
+</h4>
+<p>Voici quelques exemples d&rsquo;utilisation de circuit breaker :</p>
+<ul>
+<li>
+<p>Dans une application de commerce en ligne, un circuit breaker peut être utilisé pour protéger l&rsquo;application contre les pannes du système de paiement. Si le système de paiement échoue de manière répétée, le circuit breaker peut être activé pour bloquer temporairement les appels de service vers ce système et empêcher l&rsquo;application de se bloquer.</p>
+</li>
+<li>
+<p>Dans une application de gestion de ressources humaines, un circuit breaker peut être utilisé pour protéger l&rsquo;application contre les pannes du système de gestion des salaires. Si le système de gestion des salaires échoue de manière répétée, le circuit breaker peut être activé pour bloquer temporairement les appels de service vers ce système et empêcher l&rsquo;application de se bloquer.</p>
+</li>
+<li>
+<p>Dans une application de gestion de projets, un circuit breaker peut être utilisé pour protéger l&rsquo;application contre les pannes du système de gestion des tâches. Si le système de gestion des tâches échoue de manière répétée, le circuit breaker peut être activé pour bloquer temporairement les appels de service vers ce système et empêcher l&rsquo;application de se bloquer.</p>
+</li>
+</ul>
+<p>Voici quelques exemples de logiciels qui sont conçus pour fonctionner en tant que circuit breaker :</p>
+<ul>
+<li>Hystrix : Cette bibliothèque open source, développée par Netflix, est spécialement conçue pour implémenter des circuit breakers dans les applications Java.</li>
+<li>Resilience4j : Cette bibliothèque open source est également conçue pour implémenter des circuit breakers dans les applications Java, mais elle est plus légère et plus facile à utiliser que Hystrix.</li>
+<li>Fuse : Ce logiciel commercial est conçu pour implémenter des circuit breakers dans les applications .NET.</li>
+<li>Envoy : Cette bibliothèque open source, développée par Lyft, est conçue pour implémenter des circuit breakers et d&rsquo;autres fonctionnalités de gestion de la disponibilité dans les applications distribuées.</li>
+</ul>
+<h3 id="cache-">
+  Cache :
+  <a class="heading-link" href="#cache-">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>Cache : ce pattern consiste à mettre en place un mécanisme de mémorisation de données fréquemment utilisées, afin de réduire les temps de réponse et de soulager la charge sur les services backend. Le Cache peut être configuré pour stocker des données en mémoire, sur disque ou dans un système de stockage distribué, en fonction de différents critères de validité et de fréquence d&rsquo;utilisation.</li>
+</ul>
+<p>Le cache est une mémoire tampon qui stocke temporairement des données afin de réduire le temps de réponse lorsqu&rsquo;elles sont demandées à nouveau. Il s&rsquo;agit d&rsquo;un mécanisme de mémoire intermédiaire qui permet d&rsquo;accélérer l&rsquo;accès aux données en les mettant à disposition sans avoir à les requérir à chaque fois auprès de leur source d&rsquo;origine.</p>
+<p>Voici quelques exemples d&rsquo;utilisation de cache :</p>
+<ul>
+<li>Dans un navigateur web : Le cache du navigateur web stocke temporairement les pages web et leurs éléments (images, scripts, etc.) afin de réduire le temps de chargement lorsqu&rsquo;elles sont visitées à nouveau.</li>
+<li>Dans un serveur web : Le cache du serveur web peut être utilisé pour stocker les réponses aux requêtes HTTP afin de réduire la charge sur le serveur et d&rsquo;accélérer le temps de réponse pour les utilisateurs.</li>
+<li>Dans un système de fichiers : Le cache du système de fichiers peut être utilisé pour stocker les données de fichiers récemment lus afin de réduire le temps d&rsquo;accès aux données lorsqu&rsquo;elles sont demandées à nouveau.</li>
+<li>Dans une base de données : Le cache de base de données peut être utilisé pour stocker temporairement les données de base de données fréquemment utilisées afin de réduire le temps de réponse des requêtes de base de données.</li>
+</ul>
+<p>Voici quelques exemples de logiciels de cache :</p>
+<ul>
+<li>Memcached : C&rsquo;est un système de cache en mémoire distribué open source utilisé pour stocker temporairement des données de base de données, de fichiers ou d&rsquo;autres informations structurées. Il est souvent utilisé pour accélérer les applications web en réduisant la charge sur les bases de données et les serveurs de fichiers.</li>
+<li>Redis : C&rsquo;est un système de cache en mémoire open source qui permet de stocker temporairement des données de différents types (chaînes de caractères, listes, ensembles, etc.) et qui prend en charge diverses opérations de traitement de données. Il est souvent utilisé comme base de données de cache, comme système de message ou comme outil de traitement de données en temps réel.</li>
+<li>Varnish : C&rsquo;est un logiciel de cache de serveur web open source qui permet de stocker temporairement les réponses aux requêtes HTTP afin de réduire la charge sur le serveur web et d&rsquo;accélérer le temps de réponse pour les utilisateurs. Il peut être configuré pour cacher des pages web, des images et d&rsquo;autres éléments de contenu en fonction de différents critères.</li>
+<li>Squid : C&rsquo;est un serveur proxy open source qui permet de stocker temporairement les réponses aux requêtes HTTP et HTTPS afin de réduire la charge sur les serveurs web et d&rsquo;accélérer le temps de réponse pour les utilisateurs. Il peut être configuré pour cacher des pages web, des images et d&rsquo;autres éléments de contenu en fonction de différents critères.</li>
+</ul>
+<h3 id="event-bus-">
+  Event Bus :
+  <a class="heading-link" href="#event-bus-">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>Event Bus : ce pattern consiste à mettre en place un mécanisme de communication asynchrone entre les différents éléments d&rsquo;une application, en utilisant un bus de messages ou un système de notification. L&rsquo;Event Bus permet de découpler les échanges de messages entre les services, de manière à améliorer la flexibilité et la robustesse de l&rsquo;application.</li>
+</ul>
+<p>Il s&rsquo;agit d&rsquo;une couche de communication indépendante qui permet de decoupler les différents services et composants de l&rsquo;application, de manière à ce qu&rsquo;ils n&rsquo;aient pas à se connaître ou à se dépendre les uns des autres.</p>
+<p>Un Event Bus peut être mis en place sous différentes formes, comme par exemple :</p>
+<ul>
+<li>Un bus de messages : qui permet de publier et de souscrire à des messages asynchrones, en utilisant un broker de messages comme RabbitMQ, Kafka, etc.</li>
+<li>Un bus d&rsquo;événements : qui permet de publier et de souscrire à des événements asynchrones, en utilisant un système de gestion d&rsquo;événements comme AWS EventBridge, Azure Event Grid, etc.</li>
+<li>Un bus de notifications : qui permet de publier et de souscrire à des notifications asynchrones, en utilisant un système de notifications comme AWS SNS, Azure Notification Hubs, etc.</li>
+</ul>
+<p>L&rsquo;utilisation d&rsquo;un Event Bus permet de bénéficier de plusieurs avantages, comme par exemple :</p>
+<ul>
+<li>La decoupling : qui permet de séparer les différents services et composants de l&rsquo;application, de manière à ce qu&rsquo;ils n&rsquo;aient pas à se connaître ou à se dépendre les uns des autres.</li>
+<li>La scalabilité : qui permet de gérer de manière plus efficace les volumes de trafic et de charge, en répartissant la charge sur plusieurs instances et en ne bloquant pas les services en cas de problème.</li>
+<li>La flexibilité : qui permet de s&rsquo;adapter rapidement aux changements et aux évolutions de l&rsquo;application, en modifiant ou en ajoutant facilement de nouveaux services ou de nouvelles fonctionnalités.</li>
+</ul>
+<h2 id="exercice--concevoir-une-architecture-web-en-utilisant-les-différents-outils-vus-en-cours">
+  Exercice : concevoir une architecture web en utilisant les différents outils vus en cours
+  <a class="heading-link" href="#exercice--concevoir-une-architecture-web-en-utilisant-les-diff%c3%a9rents-outils-vus-en-cours">
     <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
 <p>Vous pouvez utiliser un outil de diagramme de cas d&rsquo;utilisation comme Lucidchart ou Draw.io pour réaliser votre modélisation. Voici quelques éléments à prendre en compte lors de la création de votre diagramme :</p>
 <ul>
-<li>Identifiez les cas d&rsquo;utilisation de votre application web (par exemple : naviguer parmi les produits, ajouter un produit au panier, finaliser un achat, etc.)</li>
-<li>Définissez les acteurs de votre application web (par exemple : utilisateur, administrateur, système de paiement, etc.)</li>
-<li>Tracez les liens entre les cas d&rsquo;utilisation et les acteurs en utilisant des flèches</li>
-<li>Ajoutez des notes pour expliquer les détails de chaque cas d&rsquo;utilisation</li>
+<li>Prenez le cas d&rsquo;une application de e-commerce qui permet de acheter en ligne des produits.</li>
+<li>Identifiez les différents services nécessaires à l&rsquo;application (par exemple : service de gestion des produits, service de gestion des commandes, service de gestion des utilisateurs, etc.)</li>
+<li>Utilisez des diagrammes de séquence et de cas d&rsquo;utilisation pour modéliser les interactions entre ces services.</li>
+<li>Choisissez un pattern d&rsquo;architecture web qui convient à votre application (par exemple, API Gateway, Load Balancer, Circuit Breaker, etc.) et justifiez votre choix.</li>
+<li>Dessinez le diagramme de votre architecture en utilisant les outils vus en cours (par exemple, draw.io).</li>
+<li>Rédigez un rapport décrivant votre architecture et les résultats de vos tests.</li>
 </ul>
-<p>Voici un exemple de diagramme de cas d&rsquo;utilisation pour un site de e-commerce :</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>         +------------+
-</span></span><span style="display:flex;"><span>         | Utilisateur|
-</span></span><span style="display:flex;"><span>         +------------+
-</span></span><span style="display:flex;"><span>             |  |
-</span></span><span style="display:flex;"><span>          +--|--+
-</span></span><span style="display:flex;"><span>          |  |  |
-</span></span><span style="display:flex;"><span>          |  |  |
-</span></span><span style="display:flex;"><span>  +-------------------+
-</span></span><span style="display:flex;"><span>  |    Système de    |
-</span></span><span style="display:flex;"><span>  |   paiement       |
-</span></span><span style="display:flex;"><span>  +-------------------+
-</span></span><span style="display:flex;"><span>          |  |  |
-</span></span><span style="display:flex;"><span>          |  |  |
-</span></span><span style="display:flex;"><span>          +--|--+
-</span></span><span style="display:flex;"><span>             |  |
-</span></span><span style="display:flex;"><span>         +------------+
-</span></span><span style="display:flex;"><span>         | Administrateur|
-</span></span><span style="display:flex;"><span>         +------------+
-</span></span></code></pre></div><p>Votre cas d&rsquo;étude sera le réseau instagram, pour faciliter l&rsquo;exercice on exclu volontairement la partie &ldquo;chat&rdquo; et &ldquo;story&rdquo; de l&rsquo;application.</p>
 
   </article>
 </section>
@@ -556,7 +440,7 @@ Differentes architectures : Link to heading Il existe plusieurs types d&rsquo;ar
     
       2019 -
     
-    2022
+    2023
      Jean-Baptiste DONNETTE 
     ·
     

@@ -18,12 +18,22 @@
     
     <item>
       <title>Session 1 : Introduction à l&#39;architecture web</title>
+      <link>https://electrosenpai.github.io/architecture/lesson2/</link>
+      <pubDate>Thu, 29 Dec 2022 10:00:16 +0100</pubDate>
+      
+      <guid>https://electrosenpai.github.io/architecture/lesson2/</guid>
+      <description>Qu&amp;rsquo;est-ce que l&amp;rsquo;architecture web ? Link to heading L&amp;rsquo;architecture web désigne la manière dont les différents éléments d&amp;rsquo;une application web (services, bases de données, front-end, etc.) sont organisés et interagissent entre eux. Elle détermine la façon dont l&amp;rsquo;application web sera conçue, développée, déployée et maintenue.
+Qu&amp;rsquo;est ce que du load balancing ? Link to heading Définition générale : Link to heading Le load balancing est une technique utilisée pour répartir la charge de travail sur plusieurs serveurs ou instances de traitement afin d&amp;rsquo;optimiser la performance et la disponibilité d&amp;rsquo;un système.</description>
+    </item>
+    
+    <item>
+      <title>Session 2 : Conception d’une architecture web </title>
       <link>https://electrosenpai.github.io/architecture/lesson1/</link>
       <pubDate>Thu, 29 Dec 2022 10:00:16 +0100</pubDate>
       
       <guid>https://electrosenpai.github.io/architecture/lesson1/</guid>
-      <description>Qu&amp;rsquo;est-ce que l&amp;rsquo;architecture web ? Link to heading L&amp;rsquo;architecture web désigne la manière dont les différents éléments d&amp;rsquo;une application web (services, bases de données, front-end, etc.) sont organisés et interagissent entre eux. Elle détermine la façon dont l&amp;rsquo;application web sera conçue, développée, déployée et maintenue.
-Differentes architectures : Link to heading Il existe plusieurs types d&amp;rsquo;architecture web, qui varient selon la manière dont les différents éléments de l&amp;rsquo;application sont séparés et communiquent entre eux.</description>
+      <description>Les critères de choix d&amp;rsquo;une architecture web Link to heading Lorsqu&amp;rsquo;on doit décider quelle architecture adopter pour une application web, il est important de prendre en compte plusieurs critères qui vont influencer sa performance, sa scalabilité et sa flexibilité. Voici quelques exemples de critères à prendre en compte :
+Scalabilité : la capacité d&amp;rsquo;un système à s&amp;rsquo;adapter et à évoluer en fonction de la croissance de la demande en termes de ressources, de performance et de fonctionnalités.</description>
     </item>
     
     <item>
