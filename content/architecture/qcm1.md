@@ -167,3 +167,39 @@ c) Un protocole de communication qui permet de transférer des données sur un r
 d) Un ordinateur ou un logiciel qui permet d'exécuter des applications (par exemple, une application de gestion de contacts ou de gestion de projets) sur un réseau, principalement sur Internet
 
 Réponse : b)
+
+1. Qu'est-ce qu'une architecture monolithe ?
+
+a) Un système d'application constitué de nombreux microservices indépendants
+b) Un système d'application constitué d'un seul bloc d'application (Réponse)
+c) Un système d'application constitué de plusieurs blocs d'application indépendants
+d) Un système d'application constitué d'une seule fonction exécutable
+
+2. Quels sont les avantages de l'architecture microservices ?
+
+a) Facilité de déploiement et de maintenance
+b) Facilité de scalabilité
+c) Meilleure isolation des erreurs
+d) Toutes les réponses sont correctes (Réponse)
+
+3. Qu'est-ce qu'une architecture en "lambda" ?
+
+a) Un système d'application constitué de nombreuses fonctions exécutables indépendantes (Réponse)
+b) Un système d'application constitué de nombreux microservices indépendants
+c) Un système d'application constitué d'un seul bloc d'application
+d) Un système d'application constitué de plusieurs blocs d'application indépendants
+
+4. Qu'est-ce que la scalabilité horizontale ?
+
+a) La capacité d'ajouter de nouveaux nœuds à un cluster de serveurs (Réponse)
+b) La capacité de déployer de nouvelles instances d'une application
+c) La capacité de déployer de nouvelles fonctions exécutables
+d) La capacité de déployer de nouveaux microservices
+
+5. Quelle est la principale différence entre une architecture monolithe et une architecture microservices ?
+
+a) Les microservices sont déployés sur des clusters de serveurs, tandis que les monolithes sont déployés sur un seul serveur
+b) Les microservices sont plus faciles à déployer et à maintenir, tandis que les monolithes sont plus difficiles à gérer
+c) Les microservices sont plus faciles à développer et à mettre à jour, tandis que les monolithes sont plus difficiles à changer
+d) Les microservices sont plus évolutifs et flexibles, tandis que les monolithes sont plus rigides et moins évolutifs (Réponse)
+
