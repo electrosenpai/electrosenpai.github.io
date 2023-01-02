@@ -10,7 +10,7 @@ Lorsqu'on doit décider quelle architecture adopter pour une application web, il
 
 - Scalabilité : la capacité d'un système à s'adapter et à évoluer en fonction de la croissance de la demande en termes de ressources, de performance et de fonctionnalités.
 - Flexibilité : la capacité d'un système à évoluer et à s'adapter rapidement aux changements de requirements ou de contexte.
-- Fiabilité : la capacité d'un système à fonctionner de manière stable et sans interruption.
+- Disponibilité : la capacité d'un système à fonctionner de manière stable et sans interruption.
 - Coût : le coût total de possession (TCO) d'un système, c'est-à-dire tous les coûts associés à son développement, son déploiement et son maintenance. On peut également parler de FinOps
 - Sécurité : la capacité d'un système à protéger les données et les ressources contre les attaques ou les accès non autorisés.
 
