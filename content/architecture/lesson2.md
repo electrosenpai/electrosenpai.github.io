@@ -1,5 +1,5 @@
 ---
-title: "Session 1 : Introduction à l'architecture web"
+title: "Session 2 : Introduction à l'architecture web"
 date: 2022-12-29T10:00:16+01:00
 draft: false
 ---

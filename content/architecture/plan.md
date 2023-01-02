@@ -6,19 +6,18 @@ draft: false
 
 # Cours d'architecture & service web
 
-
-## [Session 1 : Introduction à l'architecture web](../lesson1)
-- Définition de l'architecture web et des différents types d'architecture (monolithe, microservices, etc.)
-- Les avantages et inconvénients de chaque type d'architecture
-- **Exercice** : modéliser une architecture web en utilisant un diagramme de cas d'utilisation
-- **QCM** : connaissances de base sur l'architecture web
-
-## [Session 2 : Conception d'une architecture web](../lesson2)
+## [Session 1 : Conception d'une architecture web](../lesson1)
 - Les critères de choix d'une architecture web (scalabilité, flexibilité, etc.)
 - La modélisation des services web avec les diagrammes de séquence et de cas d'utilisation
 - Les patterns d'architecture web couramment utilisés (API Gateway, Load Balancer, etc.)
 - **Exercice** : concevoir une architecture web en utilisant les différents outils vus en cours
 - **QCM** : connaissances sur la conception d'une architecture web
+
+## [Session 2 : Introduction à l'architecture web](../lesson2)
+- Définition de l'architecture web et des différents types d'architecture (monolithe, microservices, etc.)
+- Les avantages et inconvénients de chaque type d'architecture
+- **Exercice** : modéliser une architecture web en utilisant un diagramme de cas d'utilisation
+- **QCM** : connaissances de base sur l'architecture web
 
 ## [Session 3 : Mise en œuvre d'une architecture web](../lesson3)
 - Les différentes technologies utilisées pour mettre en œuvre une architecture web (Java, .NET, Node.js, etc.)
