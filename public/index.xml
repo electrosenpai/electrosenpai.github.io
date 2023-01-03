@@ -37,6 +37,16 @@ Qu&amp;rsquo;est ce que du load balancing ? Link to heading Définition généra
     </item>
     
     <item>
+      <title>Session 3 : Introduction à l&#39;architecture web</title>
+      <link>https://electrosenpai.github.io/architecture/lesson3/</link>
+      <pubDate>Thu, 29 Dec 2022 10:00:16 +0100</pubDate>
+      
+      <guid>https://electrosenpai.github.io/architecture/lesson3/</guid>
+      <description>Les différents éléments d&amp;rsquo;une application web Link to heading Le front end et le backend sont deux parties d&amp;rsquo;une application web qui travaillent ensemble pour fournir une expérience utilisateur cohérente.
+Front end Link to heading Le front end, également appelé &amp;ldquo;client&amp;rdquo;, se réfère aux éléments d&amp;rsquo;une application web qui sont visibles et interagissables par l&amp;rsquo;utilisateur. Il comprend généralement du HTML, du CSS et du JavaScript qui sont exécutés dans le navigateur de l&amp;rsquo;utilisateur.</description>
+    </item>
+    
+    <item>
       <title>Courses</title>
       <link>https://electrosenpai.github.io/courses/</link>
       <pubDate>Thu, 29 Dec 2022 10:00:07 +0100</pubDate>

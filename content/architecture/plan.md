@@ -23,7 +23,7 @@ draft: false
 - Les différentes technologies utilisées pour mettre en œuvre une architecture web (Java, .NET, Node.js, etc.)
 - La création d'un environnement de développement et de déploiement pour les services web (outils de build, de test, de déploiement, etc.)
 - La gestion des erreurs et des exceptions dans les services web
-- **Exercice** : mettre en œuvre une architecture web en utilisant une technologie choisie par l'étudiant
+- **Exercice** : Mise en place d'un workflow GitOps pour le déploiement d'une application web
 - **QCM** : connaissances sur la mise en œuvre d'une architecture web
 
 ## [Session 4 : Sécurisation des services web](../lesson4)
