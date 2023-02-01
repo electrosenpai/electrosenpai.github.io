@@ -13,10 +13,10 @@ Les services web sont de plus en plus utilisés pour offrir des services en lign
 L'authentification est le processus de vérification de l'identité d'un utilisateur ou d'un système. Il existe plusieurs méthodes d'authentification couramment utilisées pour les services web, notamment les mots de passe, les jetons d'accès, et les jetons d'actualisation.
 
 * L'authentification basée sur les mots de passe est la méthode la plus courante. L'utilisateur entre un nom d'utilisateur et un mot de passe pour se connecter au service web. Ce dernier vérifie ensuite ces informations avec un serveur d'authentification pour valider l'identité de l'utilisateur.
-* L'authentification basée sur les jetons d'accès utilise des jetons cryptés pour vérifier l'identité de l'utilisateur. Lorsqu'un utilisateur se connecte au service web avec ses informations d'identification, le service web lui attribue un jeton d'accès. Ce jeton est ensuite utilisé pour vérifier l'identité de l'utilisateur lorsqu'il effectue des requêtes ultérieures au service web.
-* L'authentification basée sur les jetons d'actualisation utilise des jetons cryptés pour vérifier l'identité de l'utilisateur et pour actualiser les jetons d'accès. Lorsqu'un utilisateur se connecte au service web avec ses informations d'identification, le service web lui attribue un jeton d'accès et un jeton d'actualisation. Lorsque le jeton d'accès expire, l'utilisateur peut utiliser le jeton d'actualisation pour obtenir un nouveau jeton d'accès.
+* L'authentification basée sur les jetons d'accès utilise des jetons chiffrés pour vérifier l'identité de l'utilisateur. Lorsqu'un utilisateur se connecte au service web avec ses informations d'identification, le service web lui attribue un jeton d'accès. Ce jeton est ensuite utilisé pour vérifier l'identité de l'utilisateur lorsqu'il effectue des requêtes ultérieures au service web.
+* L'authentification basée sur les jetons d'actualisation utilise des jetons chiffrés pour vérifier l'identité de l'utilisateur et pour actualiser les jetons d'accès. Lorsqu'un utilisateur se connecte au service web avec ses informations d'identification, le service web lui attribue un jeton d'accès et un jeton d'actualisation. Lorsque le jeton d'accès expire, l'utilisateur peut utiliser le jeton d'actualisation pour obtenir un nouveau jeton d'accès.
 
-L'authentification peut être implémentée en utilisant des mots de passe cryptés avec des bibliothèques telles que bcrypt ou passlib pour vérifier les informations d'identification de l'utilisateur. Par exemple, voici comment vérifier un nom d'utilisateur et un mot de passe :
+L'authentification peut être implémentée en utilisant des mots de passe chiffrés avec des bibliothèques telles que bcrypt ou passlib pour vérifier les informations d'identification de l'utilisateur. Par exemple, voici comment vérifier un nom d'utilisateur et un mot de passe :
 
 ```python
 import bcrypt
@@ -111,13 +111,13 @@ Ces exemples sont donnés à titre indicatif et qu'il est important de choisir l
 
 ## SSL & TLS :
 
-SSL et TLS sont des protocoles de sécurité utilisés pour sécuriser les communications sur Internet. Ils permettent d'établir une connexion cryptée entre un client (généralement un navigateur web) et un serveur (généralement un site web) pour s'assurer que les données échangées entre eux restent confidentielles et intègres.
+SSL et TLS sont des protocoles de sécurité utilisés pour sécuriser les communications sur Internet. Ils permettent d'établir une connexion chiffrée entre un client (généralement un navigateur web) et un serveur (généralement un site web) pour s'assurer que les données échangées entre eux restent confidentielles et intègres.
 
 ### Fonctionnement de base de SSL/TLS
 
-La communication SSL/TLS démarre par un échange de messages de salutation entre le client et le serveur, qui négocient les options de cryptage et de compression à utiliser. Ensuite, le serveur envoie son certificat, qui contient des informations sur l'identité du serveur (telles que son nom et son adresse) ainsi que sa clé publique. Le client vérifie la validité de ce certificat à l'aide des autorités de certification (CA) et utilise la clé publique pour chiffrer une clé de session qui sera utilisée pour chiffrer les données échangées. Le client envoie également son propre certificat (s'il en possède un) et une clé de session chiffrée pour le serveur.
+La communication SSL/TLS démarre par un échange de messages de salutation entre le client et le serveur, qui négocient les options de chiffrage et de compression à utiliser. Ensuite, le serveur envoie son certificat, qui contient des informations sur l'identité du serveur (telles que son nom et son adresse) ainsi que sa clé publique. Le client vérifie la validité de ce certificat à l'aide des autorités de certification (CA) et utilise la clé publique pour chiffrer une clé de session qui sera utilisée pour chiffrer les données échangées. Le client envoie également son propre certificat (s'il en possède un) et une clé de session chiffrée pour le serveur.
 
-Une fois cette phase de négociation terminée, les deux parties peuvent échanger des données cryptées en utilisant la clé de session convenues.
+Une fois cette phase de négociation terminée, les deux parties peuvent échanger des données chiffrées en utilisant la clé de session convenues.
 
 ### Certificats SSL/TLS
 
@@ -238,7 +238,7 @@ En résumé, pour protéger un site internet, on peut utiliser des techniques co
 
 Il est important de noter que la sécurité d'un site web ne repose pas uniquement sur la mise en place de ces mécanismes de sécurité, mais également sur la mise en place de bonnes pratiques de sécurité dans la conception, le développement et l'exploitation du site. Il est important de suivre les meilleures pratiques de sécurité telles que :
 
-* La sécurisation des données sensibles en utilisant des algorithmes de chiffrement forts et en stockant les données cryptées dans des bases de données sécurisées.
+* La sécurisation des données sensibles en utilisant des algorithmes de chiffrement forts et en stockant les données chiffrées dans des bases de données sécurisées.
 * La réduction des privilèges pour les utilisateurs et les applications pour limiter les accès non nécessaires.
 * La mise en place d'une politique de mots de passe forte pour empêcher les attaques par dictionnaire.
 * La restriction de l'accès aux réseaux internes sensibles en utilisant des techniques de sécurité réseau telles que les pare-feux et les VPN.
