@@ -129,3 +129,147 @@ Prometheus est un système de surveillance open-source qui permet de collecter d
 Prometheus est particulièrement utile pour les équipes de développement, les équipes de DevOps et les équipes de gestion de la performance pour identifier les problèmes de performances et les résoudre rapidement. Il est également très utile pour les équipes de sécurité pour identifier les problèmes de sécurité potentiels. Il est souvent utilisé conjointement avec Grafana pour une meilleure visualisation des données.
 
 Il est important de noter que Prometheus est un projet open-source qui est souvent utilisé en conjonction avec d'autres outils tels que Grafana pour une meilleure visualisation des données. Si vous souhaitez essayer Grafana vous pouvez faire un tour sur ce [site](https://play.grafana.org/)
+
+# QCM :
+
+Qu'est-ce que le monitoring ?
+a. La surveillance continue d'un système ou d'une application pour détecter les anomalies et les problèmes potentiels.
+b. La collecte de données de performance pour identifier les tendances.
+c. La visualisation de données en temps réel.
+d. La mise en place de protocoles de sécurité.
+Réponse : a
+
+Qu'est-ce que le logging ?
+a. La collecte de données de performance pour identifier les tendances.
+b. L'enregistrement de données sur l'état et les activités d'un système.
+c. La surveillance continue d'un système ou d'une application pour détecter les anomalies et les problèmes potentiels.
+d. La mise en place de protocoles de sécurité.
+Réponse : b
+
+Comment peut-on détecter les problèmes potentiels avec le monitoring ?
+a. En mesurant les performances et les métriques d'un système.
+b. En visualisant les données en temps réel.
+c. En collectant des données de performance pour identifier les tendances.
+d. En stockant des informations sur les interactions avec les services web.
+Réponse : a
+
+Comment peut-on utiliser les données de journalisation ?
+a. Pour identifier les problèmes potentiels.
+b. Pour comprendre les tendances et identifier les tendances à venir.
+c. Pour répondre aux exigences réglementaires ou pour la conformité.
+d. Toutes les réponses sont correctes.
+Réponse : d
+
+Comment peut-on centraliser les données de différents composants de l'architecture de services web ?
+a. En utilisant des technologies de monitoring comme Datadog.
+b. En utilisant des protocoles de sécurité adéquats.
+c. En surveillant les performances des services web en temps réel.
+d. En stockant des informations sur les interactions avec les services web.
+Réponse : a
+
+Que peut-on surveiller avec le monitoring ?
+a. Les serveurs web.
+b. Les bases de données.
+c. Les services d'authentification.
+d. Toutes les réponses sont correctes.
+Réponse : d
+
+Que peut-on stocker avec le logging ?
+a. Les interactions avec les services web.
+b. Les performances et les métriques d'un système.
+c. Les données de performance pour identifier les tendances.
+d. Les protocoles de sécurité adéquats.
+Réponse : a
+
+Comment peut-on réagir rapidement en cas de problème ?
+a. En configurant des alertes pour alerter les administrateurs de système.
+b. En stockant des informations sur les interactions avec les services web.
+c. En utilisant des bibliothèques de monitoring telles que psutil.
+d. En créant des tableaux de bord et des rapports.
+Réponse : a
+
+Comment peut-on détecter les problèmes de performances et les résoudre rapidement ?
+a. En utilisant Datadog.
+b. En utilisant Grafana.
+c. En utilisant Prometheus.
+d. Toutes les réponses sont correctes.
+Réponse : d
+
+Quels types de données peut-on collecter avec Datadog ?
+a. Des données de performance provenant de différentes sources.
+b. Des données de performance provenant d'applications uniquement.
+c. Des données de performance provenant de serveurs uniquement.
+d. Des données de performance provenant de réseaux uniquement.
+Réponse : a
+
+Quel est l'outil open-source de visualisation de données et de monitoring qui permet de créer des tableaux de bord interactifs pour afficher les données de performance en temps réel à partir de différentes sources de données ?
+a) Datadog
+b) Grafana
+c) Prometheus
+d) Azure Monitor
+
+Réponse : b) Grafana
+
+Quel est le système de surveillance open-source qui permet de collecter des données de performance en temps réel à partir de différentes sources et qui utilise un langage de requête pour interroger les données de performance ?
+a) Datadog
+b) Grafana
+c) Prometheus
+d) Azure Monitor
+
+Réponse : c) Prometheus
+
+Quel outil de monitoring permet de collecter, stocker et afficher les données de performance en temps réel provenant de différentes sources, comme des applications, des serveurs, des réseaux, etc. ?
+a) Datadog
+b) Grafana
+c) Prometheus
+d) Azure Monitor
+
+Réponse : a) Datadog
+
+Quel outil de monitoring permet de connecter Grafana à des bases de données pour récupérer des données de performance, et utiliser ces données pour créer des graphiques et des tableaux de bord personnalisés ?
+a) Datadog
+b) Grafana
+c) Prometheus
+d) Azure Monitor
+
+Réponse : b) Grafana
+
+Quel outil de monitoring permet de collecter des données de performance à l'aide d'agents légers installés sur les serveurs, ou en utilisant des API pour envoyer des données à partir des applications, et de connecter à des services externes tels que AWS, Azure, GCP, etc. ?
+a) Datadog
+b) Grafana
+c) Prometheus
+d) Azure Monitor
+
+Réponse : a) Datadog
+
+Quel est l'outil de monitoring et d'analyse des performances pour les applications et les infrastructures qui offre des fonctionnalités avancées telles que l'analyse des journaux, la surveillance de l'infrastructure, la surveillance de l'application, l'analyse de la performance des requêtes, etc. ?
+a) Datadog
+b) Grafana
+c) Prometheus
+d) Azure Monitor
+
+Réponse : a) Datadog
+
+Quel outil de monitoring permet de créer des alertes pour des valeurs limites spécifiques, pour une utilisation de ressources anormale, des erreurs, etc. ?
+a) Datadog
+b) Grafana
+c) Prometheus
+d) Azure Monitor
+
+Réponse : a) Datadog
+
+Quel outil de monitoring est particulièrement utile pour les équipes de développement, les équipes de DevOps et les équipes de gestion de la performance pour identifier les problèmes de performances et les résoudre rapidement, ainsi que pour les équipes de sécurité pour identifier les problèmes de sécurité potentiels ?
+a) Datadog
+b) Grafana
+c) Prometheus
+d) Azure Monitor
+
+Réponse : a) Datadog
+
+Quel outil de monitoring est souvent utilisé conjointement avec Grafana pour une meilleure visualisation des données ?
+a) Datadog
+b) Grafana
+c) Prometheus
+d) Azure Monitor
+
+Réponse : c) Prometheus
